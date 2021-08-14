@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Kevin Gruich</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
+<header>
+    <nav>
+        <ul>
+            <li><strong>Home</strong></li>
+            <li><a href="html/projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="encasing-div">
+    <main>
+        <section id="profile">
+            <img alt="A recent picture of me" class="profile-pic"
+                 src="sources/temporaryProfilePicture.PNG">
+            <h1>Hi, I'm Kevin Gruich.</h1>
+        </section>
+        <section id="overview">
+            <p>This website serves to display my programming projects and my (minimal)
+                web development skills.</p>
+        </section>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>I am currently an undergraduate at the University of Michigan - Ann Arbor,
+                studying Computer Science,
+                Economics, and Japanese.</p>
+        </section>
+        <section id="achieve">
+            <h2>Achievements</h2>
             <ul>
-                <li><strong>Home</strong></li>
-                <li><a href="html/about.html">About Me</a></li>
-                <li><a href="html/projects.html">Projects</a></li>
-                <li><a href="html/contact.html">Contact Me</a></li>
+                <li>Recipient of the William J. Branstrom Freshman Prize,
+                    an award is given annually to first year undergraduate
+                    students whose academic achievement during their first
+                    Fall term on campus places them in the upper five percent
+                    of their college class.
+                </li>
+                <li>Graduate of Wylie E. Groves High School</li>
+                <li>Made this website</li>
             </ul>
-        </nav>
-    </header>
-        <div class="encasing-div">
-            <main>
-                <section id="profile">
-                    <img class="profile-pic" src="sources/temporaryProfilePicture.PNG" alt="A recent picture of me">
-                    <h1>Hi, I'm Kevin Gruich.</h1>
-                </section>
-                <section id="overview">
-                    <p>This website serves to display my programming projects and my (minimal) web development skills.</p>
-                </section>
-            </main>
-        <footer>
-            ©  <script>document.write(new Date().getFullYear())</script> Kevin Gruich
-        </footer>
-    </div>
+        </section>
+        <section id="contact">
+            <p>Feel free to send me an <a href="mailto:kgruich@umich.edu">email!</a></p>
+        </section>
+    </main>
+    <footer>
+        ©
+        <script>document.write(new Date().getFullYear())</script>
+        Kevin Gruich
+    </footer>
+</div>
 </body>
 </html>

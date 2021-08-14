@@ -2,37 +2,51 @@ body {
     margin: 50px 0 0;
     font-family: sans-serif;
 }
+
 .encasing-div {
     display: block;
     max-width: 900px;
     margin-right: auto;
     margin-left: auto;
 }
+
 header {
     display: flex;
     position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
     top: 0;
     left: 0;
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background-color: white;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 header * {
     display: inline;
     height: 50px;
 }
+
 header ul {
     padding: 0;
 }
+
 header li {
     margin-left: 20px;
 }
+
 header a {
     text-decoration: none;
     color: black;
 }
-section {
+
+#profile {
     height: 25vh;
     border-bottom: 1px solid black;
     display: flex;
@@ -40,18 +54,74 @@ section {
     align-items: center;
     text-align: center;
 }
+
 #profile .profile-pic {
     border-radius: 50%;
     height: 184px;
     width: 184px;
 }
+
 #profile h1 {
     padding-left: 20px;
     font-size: 3em;
 }
+
+#overview {
+    height: 18vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about {
+    height: 22vh;
+    border-bottom: 1px solid black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 3em;
+}
+
+#achieve {
+    height: 27vh;
+    border-bottom: 1px solid black;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#achieve h2 {
+    font-size: 2em;
+}
+
+#achieve ul {
+    font-size: 1.5em;
+}
+
+#contact {
+    height: 13vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 2em;
+}
+
 p {
     font-size: 1.5em;
 }
+
 footer {
     text-align: center;
     padding: 50px;
