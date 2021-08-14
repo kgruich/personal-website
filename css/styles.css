@@ -1,0 +1,58 @@
+body {
+    margin: 50px 0 0;
+    font-family: sans-serif;
+}
+.encasing-div {
+    display: block;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+header * {
+    display: inline;
+    height: 50px;
+}
+header ul {
+    padding: 0;
+}
+header li {
+    margin-left: 20px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+section {
+    height: 25vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#profile .profile-pic {
+    border-radius: 50%;
+    height: 184px;
+    width: 184px;
+}
+#profile h1 {
+    padding-left: 20px;
+    font-size: 3em;
+}
+p {
+    font-size: 1.5em;
+}
+footer {
+    text-align: center;
+    padding: 50px;
+}
