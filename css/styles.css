@@ -1,4 +1,6 @@
 :root {
+    /*--color: #222;*/
+    /*--background-color: #fff;*/
     --section-height: auto;
     --total-width: 70vw;
     --header-height: 8vh;
@@ -10,6 +12,12 @@
     --footer-font-size: 1.5vw;
 }
 
+* {
+    color: var(--font-color);
+    background-color: var(--main-bg);
+    transition: background-color 0.6s ease, color 1s ease, border 1s ease;
+}
+
 body {
     margin: var(--header-height) 0 0;
     font-family: sans-serif;
@@ -17,7 +25,7 @@ body {
 
 section {
     height: var(--section-height);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--font-color);
     padding: 1vh 0 1vh 0;
     display: flex;
     justify-content: center;
@@ -38,6 +46,10 @@ ul {
     font-size: var(--p-font-size);
 }
 
+a {
+    color: var(--link-color);
+}
+
 .encasing-div {
     display: block;
     max-width: var(--total-width);
@@ -51,14 +63,13 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--font-color);
     top: 0;
     left: 0;
     right: 0;
     height: var(--header-height);
     line-height: var(--header-height);
     font-size: var(--p-font-size);
-    background-color: white;
     max-width: var(--total-width);
     margin-right: auto;
     margin-left: auto;
@@ -79,7 +90,7 @@ header li {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--font-color);
 }
 
 #profile .profile-pic {

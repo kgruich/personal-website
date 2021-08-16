@@ -5,8 +5,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Kevin Gruich</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/darkmode.css" rel="stylesheet">
+    <script src="js/darkmode.js"></script>
 </head>
-<body>
+<body class="light-theme">
 <header>
     <nav>
         <ul>
@@ -15,6 +17,10 @@
         </ul>
     </nav>
 </header>
+<label class="switch">
+    <input onchange="darkModeToggle(this)" type="checkbox">+
+    <span class="slider round"></span>
+</label>
 <div class="encasing-div">
     <main>
         <section id="profile">
