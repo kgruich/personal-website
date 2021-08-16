@@ -1,19 +1,7 @@
 #hobby {
-    height: auto;
-    border-bottom: 1px solid black;
-    padding: 1vh 0 1vh 0;
     display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 #school {
-    height: auto;
-    border-bottom: 1px solid black;
-    padding: 1vh 0 1vh 0;
     display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
