@@ -1,20 +1,16 @@
 :root {
+    --profile-height: auto;
+    --overview-height: auto;
+    --about-height: auto;
+    --achieve-height: auto;
+    --contact-height: auto;
     --total-width: 70vw;
     --header-height: 8vh;
     --header-font-size: 2vw;
-    --profile-height: auto;
     --profile-pic-max-width: 100%;
     --profile-h1-font-size: 5vw;
-    --overview-height: auto;
-    --overview-p-font-size: 2.5vw;
-    --about-height: auto;
-    --about-h1-font-size: 3vw;
-    --about-p-font-size: 2.5vw;
-    --achieve-height: auto;
-    --achieve-h1-font-size: 3vw;
-    --achieve-ul-font-size: 2.5vw;
-    --contact-height: auto;
-    --contact-p-font-size: 2.5vw;
+    --p-font-size: 2.5vw;
+    --h1-font-size: 3vw;
     --footer-padding: 2vh;
     --footer-font-size: 1.5vw;
 }
@@ -100,7 +96,7 @@ header a {
 }
 
 #overview p {
-    font-size: var(--overview-p-font-size);
+    font-size: var(--p-font-size);
 }
 
 #about {
@@ -114,12 +110,12 @@ header a {
 }
 
 #about h1 {
-    font-size: var(--about-h1-font-size);
+    font-size: var(--h1-font-size);
     max-height: 100%;
 }
 
 #about p {
-    font-size: var(--about-p-font-size);
+    font-size: var(--p-font-size);
 }
 
 #achieve {
@@ -133,12 +129,12 @@ header a {
 }
 
 #achieve h1 {
-    font-size: var(--achieve-h1-font-size);
+    font-size: var(--h1-font-size);
     max-height: 100%;
 }
 
 #achieve ul {
-    font-size: var(--achieve-ul-font-size);
+    font-size: var(--p-font-size);
 }
 
 #contact {
@@ -152,7 +148,7 @@ header a {
 }
 
 #contact p {
-    font-size: var(--contact-p-font-size);
+    font-size: var(--p-font-size);
 }
 
 footer {
@@ -165,45 +161,23 @@ footer {
 @media (max-width: 320px) {
     :root {
         --total-width: 85vw;
-        --header-height: 8vh;
         --header-font-size: 5vw;
-        --profile-height: auto;
         --profile-pic-max-width: 60%;
-        --profile-h1-font-size: 9vw;
-        --overview-height: auto;
-        --overview-p-font-size: 5vw;
-        --about-height: auto;
-        --about-h1-font-size: 6vw;
-        --about-p-font-size: 5vw;
-        --achieve-height: auto;
-        --achieve-h1-font-size: 6vw;
-        --achieve-ul-font-size: 5vw;
-        --contact-height: auto;
-        --contact-p-font-size: 5vw;
-        --footer-padding: 1vh;
-        --footer-font-size: 4vw;
+        --profile-h1-font-size: 10vw;
+        --p-font-size: 6.5vw;
+        --h1-font-size: 8vw;
+        --footer-font-size: 5vw;
     }
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
     :root {
         --total-width: 85vw;
-        --header-height: 8vh;
         --header-font-size: 5vw;
-        --profile-height: auto;
         --profile-pic-max-width: 60%;
         --profile-h1-font-size: 9vw;
-        --overview-height: auto;
-        --overview-p-font-size: 5vw;
-        --about-height: auto;
-        --about-h1-font-size: 6vw;
-        --about-p-font-size: 5vw;
-        --achieve-height: auto;
-        --achieve-h1-font-size: 6vw;
-        --achieve-ul-font-size: 5vw;
-        --contact-height: auto;
-        --contact-p-font-size: 5vw;
-        --footer-padding: 1vh;
+        --p-font-size: 5vw;
+        --h1-font-size: 6vw;
         --footer-font-size: 4vw;
     }
 }
@@ -211,22 +185,11 @@ footer {
 @media (min-width: 481px) and (max-width: 1080px) {
     :root {
         --total-width: 85vw;
-        --header-height: 8vh;
         --header-font-size: 3vw;
-        --profile-height: auto;
         --profile-pic-max-width: 50%;
         --profile-h1-font-size: 9vw;
-        --overview-height: auto;
-        --overview-p-font-size: 5vw;
-        --about-height: auto;
-        --about-h1-font-size: 6vw;
-        --about-p-font-size: 5vw;
-        --achieve-height: auto;
-        --achieve-h1-font-size: 6vw;
-        --achieve-ul-font-size: 5vw;
-        --contact-height: auto;
-        --contact-p-font-size: 5vw;
-        --footer-padding: 1vh;
+        --p-font-size: 5vw;
+        --h1-font-size: 6vw;
         --footer-font-size: 4vw;
     }
 }
