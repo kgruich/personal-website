@@ -1,6 +1,7 @@
 #hobby {
-    height: 10vh;
+    height: auto;
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: block;
     justify-content: center;
     align-items: center;
@@ -8,8 +9,9 @@
 }
 
 #school {
-    height: 40vh;
+    height: auto;
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: block;
     justify-content: center;
     align-items: center;
