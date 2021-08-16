@@ -1,11 +1,32 @@
+:root {
+    --total-width: 70vw;
+    --header-height: 8vh;
+    --header-font-size: 2vw;
+    --profile-height: auto;
+    --profile-pic-max-width: 100%;
+    --profile-h1-font-size: 5vw;
+    --overview-height: auto;
+    --overview-p-font-size: 2.5vw;
+    --about-height: auto;
+    --about-h1-font-size: 3vw;
+    --about-p-font-size: 2.5vw;
+    --achieve-height: auto;
+    --achieve-h1-font-size: 3vw;
+    --achieve-ul-font-size: 2.5vw;
+    --contact-height: auto;
+    --contact-p-font-size: 2.5vw;
+    --footer-padding: 2vh;
+    --footer-font-size: 1.5vw;
+}
+
 body {
-    margin: 50px 0 0;
+    margin: var(--header-height) 0 0;
     font-family: sans-serif;
 }
 
 .encasing-div {
     display: block;
-    max-width: 900px;
+    max-width: var(--total-width);
     margin-right: auto;
     margin-left: auto;
 }
@@ -20,17 +41,18 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    line-height: 50px;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    font-size: var(--header-font-size);
     background-color: white;
-    max-width: 900px;
+    max-width: var(--total-width);
     margin-right: auto;
     margin-left: auto;
 }
 
 header * {
     display: inline;
-    height: 50px;
+    height: var(--header-height);
 }
 
 header ul {
@@ -47,7 +69,8 @@ header a {
 }
 
 #profile {
-    height: 25vh;
+    height: var(--profile-height);
+    padding: 1vh 0 1vh 0;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
@@ -57,27 +80,33 @@ header a {
 
 #profile .profile-pic {
     border-radius: 50%;
-    height: 184px;
-    width: 184px;
+    height: auto;
+    max-width: var(--profile-pic-max-width);
 }
 
 #profile h1 {
-    padding-left: 20px;
-    font-size: 3em;
+    padding-left: 1vw;
+    font-size: var(--profile-h1-font-size);
 }
 
 #overview {
-    height: 18vh;
+    height: var(--overview-height);
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+#overview p {
+    font-size: var(--overview-p-font-size);
+}
+
 #about {
-    height: 22vh;
+    height: var(--about-height);
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: block;
     justify-content: center;
     align-items: center;
@@ -85,29 +114,37 @@ header a {
 }
 
 #about h1 {
-    font-size: 3em;
+    font-size: var(--about-h1-font-size);
+    max-height: 100%;
+}
+
+#about p {
+    font-size: var(--about-p-font-size);
 }
 
 #achieve {
-    height: 27vh;
+    height: var(--achieve-height);
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-#achieve h2 {
-    font-size: 2em;
+#achieve h1 {
+    font-size: var(--achieve-h1-font-size);
+    max-height: 100%;
 }
 
 #achieve ul {
-    font-size: 1.5em;
+    font-size: var(--achieve-ul-font-size);
 }
 
 #contact {
-    height: 13vh;
+    height: var(--contact-height);
     border-bottom: 1px solid black;
+    padding: 1vh 0 1vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,14 +152,81 @@ header a {
 }
 
 #contact p {
-    font-size: 2em;
-}
-
-p {
-    font-size: 1.5em;
+    font-size: var(--contact-p-font-size);
 }
 
 footer {
     text-align: center;
-    padding: 50px;
+    padding: var(--footer-padding);
+    font-size: var(--footer-font-size);
+}
+
+/*Mobile Formatting */
+@media (max-width: 320px) {
+    :root {
+        --total-width: 85vw;
+        --header-height: 8vh;
+        --header-font-size: 5vw;
+        --profile-height: auto;
+        --profile-pic-max-width: 60%;
+        --profile-h1-font-size: 9vw;
+        --overview-height: auto;
+        --overview-p-font-size: 5vw;
+        --about-height: auto;
+        --about-h1-font-size: 6vw;
+        --about-p-font-size: 5vw;
+        --achieve-height: auto;
+        --achieve-h1-font-size: 6vw;
+        --achieve-ul-font-size: 5vw;
+        --contact-height: auto;
+        --contact-p-font-size: 5vw;
+        --footer-padding: 1vh;
+        --footer-font-size: 4vw;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    :root {
+        --total-width: 85vw;
+        --header-height: 8vh;
+        --header-font-size: 5vw;
+        --profile-height: auto;
+        --profile-pic-max-width: 60%;
+        --profile-h1-font-size: 9vw;
+        --overview-height: auto;
+        --overview-p-font-size: 5vw;
+        --about-height: auto;
+        --about-h1-font-size: 6vw;
+        --about-p-font-size: 5vw;
+        --achieve-height: auto;
+        --achieve-h1-font-size: 6vw;
+        --achieve-ul-font-size: 5vw;
+        --contact-height: auto;
+        --contact-p-font-size: 5vw;
+        --footer-padding: 1vh;
+        --footer-font-size: 4vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1080px) {
+    :root {
+        --total-width: 85vw;
+        --header-height: 8vh;
+        --header-font-size: 3vw;
+        --profile-height: auto;
+        --profile-pic-max-width: 50%;
+        --profile-h1-font-size: 9vw;
+        --overview-height: auto;
+        --overview-p-font-size: 5vw;
+        --about-height: auto;
+        --about-h1-font-size: 6vw;
+        --about-p-font-size: 5vw;
+        --achieve-height: auto;
+        --achieve-h1-font-size: 6vw;
+        --achieve-ul-font-size: 5vw;
+        --contact-height: auto;
+        --contact-p-font-size: 5vw;
+        --footer-padding: 1vh;
+        --footer-font-size: 4vw;
+    }
 }
