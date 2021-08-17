@@ -3,6 +3,12 @@
     --black: black;
     --grey: #222;
     --dark-grey: #121212;
+    --slider-box-width: 3vw;
+    --slider-box-height: 3vh;
+    --slider-width: 1.3vw;
+    --slider-height: 2.5vh;
+    --slider-left: .2vw;
+    --slider-bottom: .25vh;
 }
 
 .light-theme {
@@ -23,8 +29,8 @@
     top: 5px;
     right: 5px;
     display: inline-block;
-    width: 3vw;
-    height: 3vh;
+    width: var(--slider-box-width); /* changes with resolution*/
+    height: var(--slider-box-height); /* changes with resolution*/
 }
 
 /* Hide default HTML checkbox */
@@ -50,10 +56,10 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 2.5vh;
-    width: 1.3vw;
-    left: .2vw;
-    bottom: .25vh;
+    height: var(--slider-height); /* changes with resolution*/
+    width: var(--slider-width); /* changes with resolution*/
+    left: var(--slider-left); /* changes with resolution*/
+    bottom: var(--slider-bottom); /* changes with resolution*/
     background-color: var(--main-bg);
     -webkit-transition: .6s;
     transition: .6s;
@@ -68,14 +74,14 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(2.5vh);
-    -ms-transform: translateX(2.5vh);
-    transform: translateX(2.5vh);
+    -webkit-transform: translateX(var(--slider-height)); /* changes with resolution*/
+    -ms-transform: translateX(var(--slider-height)); /* changes with resolution*/
+    transform: translateX(var(--slider-height)); /* changes with resolution*/
 }
 
 /* Rounded sliders */
 .slider.round {
-    border-radius: 3vh;
+    border-radius: var(--slider-box-height);
 }
 
 .slider.round:before {
@@ -94,3 +100,40 @@ input:checked + .slider:before {
         --bkg-color: #fff;
     }
 }*/
+
+/*prevent preload transition firing */
+
+/*Mobile Formatting */
+@media (max-width: 320px) {
+    /*eh, it works*/
+    :root {
+        --slider-box-width: 7vw;
+        --slider-box-height: 2.6vh;
+        --slider-width: 3vw;
+        --slider-height: 2.2vh;
+        --slider-left: .3vw;
+        --slider-bottom: .1vh;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    :root {
+        --slider-box-width: 7vw;
+        --slider-box-height: 2.6vh;
+        --slider-width: 3vw;
+        --slider-height: 2vh;
+        --slider-left: .3vw;
+        --slider-bottom: .3vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1080px) {
+    :root {
+        --slider-box-width: 8vw;
+        --slider-box-height: 3vh;
+        --slider-width: 3vw;
+        --slider-height: 2.5vh;
+        --slider-left: .7vw;
+        --slider-bottom: .25vh;
+    }
+}
