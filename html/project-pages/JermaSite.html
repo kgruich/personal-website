@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>My Novelty Website</title>
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../../css/darkmode.css" rel="stylesheet" type="text/css">
+    <script src="../../js/darkmode.js"></script>
+</head>
+<body class="light-theme">
+<header>
+    <nav>
+        <ul>
+            <li><a href=../../>Home</a></li>
+            <li><a href=../projects.html>Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<label class="switch">
+    <input onchange="darkModeToggle(this)" type="checkbox">+
+    <span class="slider round"></span>
+</label>
+<div class="encasing-div">
+    <p>A video game livestreamer I follow (Jerma985) is infamous for being late, so I sought to make a website to log
+        the delay between his announced times and his actual arrivals. I designed <a
+                href="https://kgruich.github.io/JermaMissedMinutes.github.io/">the site</a> to near completion. I also
+        designed a <a href="https://github.com/kgruich/JermaStreamForecastDiscordBot">JavaScipt program</a> (a "bot") to
+        interact with Discord's messaging API to parse messages for times so
+        that I could track announced times. </p>
+    <p>Developing this website and associated bot helped me get adjusted to coding in HTML, CSS and some amount of
+        JavaScript. It also gave me my first hands-on work with an API.</p>
+    <p>The project
+        is unfinished due to lacking the hardware or money to host a database. The database intermediary between the bot
+        and website is the only lacking part of this project. I didn't return to this project because others were
+        working on a similar website functionality, but I may still return to it since those other projects haven't been
+        finished.</p>
+    <p>Checkout the <a href="https://github.com/kgruich/JermaMissedMinutes.github.io">Github</a>!</p>
+    <footer>
+        ©
+        <script>document.write(new Date().getFullYear())</script>
+        Kevin Gruich
+    </footer>
+</div>
+</body>
+</html>

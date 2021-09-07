@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>My Pong Clone</title>
+    <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+    <link href="../../css/darkmode.css" rel="stylesheet" type="text/css">
+    <script src="../../js/darkmode.js"></script>
+</head>
+<body class="light-theme">
+<header>
+    <nav>
+        <ul>
+            <li><a href=../../>Home</a></li>
+            <li><a href=../projects.html>Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<label class="switch">
+    <input onchange="darkModeToggle(this)" type="checkbox">+
+    <span class="slider round"></span>
+</label>
+<div class="encasing-div">
+    <p>In an effort to experiment with game design and the Unity game engine, I have worked on a clone of the classic
+        Pong. The basic functionality of Pong already works (scoring, movement, serving). But I plan to go further than
+        that and add settings, a menu, 2nd player controls, and an AI.</p>
+    <iframe src="https://i.simmer.io/@porkako/ultimate-pong-v1"
+            style="margin: 0 auto;display:block;width:512px;height:256px"></iframe>
+    <p>The sides of the game get cut off in the embedded version, I am still working on that.</p>
+    <img alt="Screenshot of my Pong clone" height="384" src="../../sources/PongScreenshot.PNG" width="772"/>
+    <footer>
+        ©
+        <script>document.write(new Date().getFullYear())</script>
+        Kevin Gruich
+    </footer>
+</div>
+</body>
+</html>

@@ -2,6 +2,14 @@
     display: block;
 }
 
+#hobby li {
+    text-align: left;
+}
+
 #school {
     display: block;
+}
+
+#school li {
+    text-align: left;
 }
